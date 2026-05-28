@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pondliner.com — Guided Pond Supply Shopping</title>
+  <meta name="description" content="Prototype redesign for Pondliner.com: clearer category navigation, guided product discovery, seasonal support, and ecommerce-ready structure." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>We ship everything but the water.</span>
+      <span class="topbar-hide">Expert support • Seasonal guidance • Pond supplies since 1999</span>
+      <a href="#help">Need help choosing?</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-main">
+      <a class="brand" href="index.html" aria-label="Pondliner home">Pondliner<span>.com</span></a>
+
+      <form class="site-search" role="search">
+        <label class="sr-only" for="search">Search products</label>
+        <input id="search" type="search" placeholder="Search liners, pumps, algae control..." />
+        <button type="submit">Search</button>
+      </form>
+
+      <div class="header-actions">
+        <a href="#help">Support</a>
+        <a href="#account">Account</a>
+        <a class="cart-pill" href="#cart">Cart</a>
+        <button class="nav-toggle" id="navToggle" aria-controls="siteNav" aria-expanded="false">Menu</button>
+      </div>
+    </div>
+
+    <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+      <div class="container nav-row">
+        <div class="nav-item">
+          <button class="nav-parent" data-menu="shop">Shop products</button>
+        </div>
+        <a href="#start">Start a project</a>
+        <a href="#seasonal">Seasonal care</a>
+        <a href="#learn">Learning center</a>
+        <a href="product.html">Sample product page</a>
+        <a href="#help">Contact</a>
+      </div>
+
+      <div class="mega-menu" id="shopMenu" aria-label="Shop product categories">
+        <div class="container mega-grid">
+          <div>
+            <p class="mega-label">Build or repair</p>
+            <a href="#liners"><strong>Pond Liners</strong><span>EPDM, PVC, underlayment, seam tape</span></a>
+            <a href="#kits"><strong>Pond Kits</strong><span>Complete kits by size and project type</span></a>
+            <a href="#pumps"><strong>Pumps & Filtration</strong><span>Flow, filters, skimmers, UV clarifiers</span></a>
+          </div>
+          <div>
+            <p class="mega-label">Maintain water</p>
+            <a href="#water-care"><strong>Water Treatments</strong><span>Algae, bacteria, clarity, conditioners</span></a>
+            <a href="#fish"><strong>Koi & Fish Care</strong><span>Food, health, seasonal feeding</span></a>
+            <a href="#fountains"><strong>Fountains & Aeration</strong><span>Aerators, fountains, waterfalls</span></a>
+          </div>
+          <div class="mega-callout">
+            <p class="eyebrow">Not sure?</p>
+            <h3>Start with the pond, not the product.</h3>
+            <p>Use project-based guidance to choose liner size, pump flow, and seasonal care steps.</p>
+            <a class="btn primary small" href="#start">Help me choose</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Redesign concept: ecommerce + guidance</p>
+          <h1>Pond supplies are easier when customers know where to start.</h1>
+          <p>This prototype keeps the depth of a specialist catalog, but organizes it around customer intent: build, repair, maintain, or learn.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#start">Start with a project</a>
+            <a class="btn secondary" href="#categories">Shop categories</a>
+          </div>
+        </div>
+
+        <aside class="finder-card" id="start" aria-label="Product finder">
+          <p class="eyebrow">Quick pond finder</p>
+          <h2>What do you need today?</h2>
+          <div class="finder-options">
+            <a href="#kits"><span>01</span><strong>Build a new pond</strong><em>Kits, liners, pumps</em></a>
+            <a href="#liners"><span>02</span><strong>Replace a liner</strong><em>Size, material, underlayment</em></a>
+            <a href="#water-care"><span>03</span><strong>Fix water problems</strong><em>Algae, clarity, bacteria</em></a>
+            <a href="#seasonal"><span>04</span><strong>Prepare for the season</strong><em>Spring, summer, fall, winter</em></a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="confidence-strip" aria-label="Trust signals">
+      <div class="container confidence-grid">
+        <div><strong>Catalog depth</strong><span>Specialized products without hiding complexity.</span></div>
+        <div><strong>Decision support</strong><span>Calculators, guides, and expert help at key moments.</span></div>
+        <div><strong>Project pathways</strong><span>Shop by task when product names are unclear.</span></div>
+        <div><strong>Commerce ready</strong><span>Category, product, search, and support structure.</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-head split">
+          <div>
+            <p class="eyebrow">Shop by category</p>
+            <h2>A clearer catalog skeleton.</h2>
+          </div>
+          <p>Each card can later become a category landing page with filters, best sellers, education, and product grids.</p>
+        </div>
+
+        <div class="category-grid">
+          <article class="category-card large" id="liners">
+            <span class="icon">💧</span>
+            <h3>Pond Liners</h3>
+            <p>EPDM and PVC liners, underlayment, seaming supplies, patch kits, and custom sizes.</p>
+            <div class="mini-links"><a href="product.html">45 Mil EPDM</a><a href="#">Underlayment</a><a href="#">Repair kits</a></div>
+          </article>
+          <article class="category-card" id="kits"><span class="icon">📦</span><h3>Pond Kits</h3><p>Starter and professional kits for backyard ponds, koi ponds, and waterfalls.</p><a class="text-link" href="#">Browse kits →</a></article>
+          <article class="category-card" id="pumps"><span class="icon">⚙️</span><h3>Pumps & Filters</h3><p>Submersible pumps, biological filters, skimmers, UV clarifiers, and accessories.</p><a class="text-link" href="#">Shop equipment →</a></article>
+          <article class="category-card" id="water-care"><span class="icon">🧪</span><h3>Water Care</h3><p>Water treatments for algae, clarity, beneficial bacteria, chlorine, and balance.</p><a class="text-link" href="#">Fix water issues →</a></article>
+          <article class="category-card" id="fish"><span class="icon">🐟</span><h3>Koi & Fish</h3><p>Food, care supplies, and seasonal feeding support for healthy pond fish.</p><a class="text-link" href="#">Care for fish →</a></article>
+          <article class="category-card" id="fountains"><span class="icon">⛲</span><h3>Fountains & Aeration</h3><p>Improve movement, oxygen, and visual appeal with aerators and water features.</p><a class="text-link" href="#">View options →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section guided-panel">
+      <div class="container guided-grid">
+        <div class="guided-copy">
+          <p class="eyebrow">Guided commerce layer</p>
+          <h2>Turn “I don’t know what to buy” into a path.</h2>
+          <p>The original business has expertise and inventory. This redesign adds decision support so beginners and experienced pond owners can both move forward.</p>
+        </div>
+        <div class="tool-grid">
+          <a href="#"><strong>Liner size calculator</strong><span>Length + width + depth + overlap</span></a>
+          <a href="#"><strong>Pump flow guide</strong><span>Match GPH to pond volume</span></a>
+          <a href="#"><strong>Algae troubleshooting</strong><span>Find the likely cause first</span></a>
+          <a href="#"><strong>Seasonal checklist</strong><span>What to do this month</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="seasonal">
+      <div class="container seasonal-card">
+        <div>
+          <p class="eyebrow">Seasonal merchandising</p>
+          <h2>Spring pond startup</h2>
+          <p>Feature rotating seasonal needs: bacteria starter, cold-weather fish food, water conditioners, pump checks, and maintenance kits.</p>
+        </div>
+        <div class="seasonal-products">
+          <a href="#"><strong>Beneficial bacteria</strong><span>Restart biological balance</span></a>
+          <a href="#"><strong>Wheat germ food</strong><span>Cool-season feeding</span></a>
+          <a href="#"><strong>Water conditioner</strong><span>Protect fish and plants</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="learn">
+      <div class="container learn-grid">
+        <div class="article-card featured">
+          <p class="eyebrow">Learning center</p>
+          <h2>Education should support the sale.</h2>
+          <p>Guides and blog content can be pulled into shopping moments instead of living separately from the catalog.</p>
+          <a class="btn primary small" href="#">Explore guides</a>
+        </div>
+        <article class="article-card"><span>Guide</span><h3>How to measure for a pond liner</h3><p>Prevent the most common ordering mistake before checkout.</p></article>
+        <article class="article-card"><span>Checklist</span><h3>Spring pond startup</h3><p>What to inspect, clean, restart, and treat.</p></article>
+        <article class="article-card"><span>Explainer</span><h3>EPDM vs PVC liners</h3><p>Help customers choose by project, climate, and budget.</p></article>
+      </div>
+    </section>
+
+    <section class="help-section" id="help">
+      <div class="container help-inner">
+        <div>
+          <p class="eyebrow">Human support</p>
+          <h2>Still not sure? Ask a pond expert.</h2>
+          <p>For complex purchases, expert help is not secondary. It is a conversion path.</p>
+        </div>
+        <div class="help-actions"><a class="btn primary" href="#">Contact support</a><a class="btn outline" href="#">Send pond measurements</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><a class="brand footer-brand" href="index.html">Pondliner<span>.com</span></a><p>Your headquarters for water garden and pond supplies since 1999.</p></div>
+      <div><h4>Shop</h4><a href="#liners">Pond Liners</a><a href="#kits">Pond Kits</a><a href="#pumps">Pumps & Filters</a><a href="#water-care">Water Care</a></div>
+      <div><h4>Guidance</h4><a href="#start">Quick finder</a><a href="#learn">Learning Center</a><a href="#seasonal">Seasonal Care</a><a href="#help">Expert Support</a></div>
+      <div><h4>Company</h4><a href="#">About</a><a href="#">Shipping</a><a href="#">Returns</a><a href="#">Contact</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
