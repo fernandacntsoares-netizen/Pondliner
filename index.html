@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pondliner.com — Specialty Pond Supplies</title>
+  <meta name="description" content="Modern specialty ecommerce concept for Pondliner.com: pond liners, pumps, filtration, water treatments, koi care, kits, and expert guidance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* PASSITO 1 — visible hero + typography refinements */
+    body { font-size: 15.5px; }
+    .ecommerce-hero {
+      position: relative;
+      overflow: hidden;
+      padding: 72px 0 58px;
+      background:
+        linear-gradient(90deg, rgba(10, 28, 52, 0.92) 0%, rgba(16, 44, 83, 0.78) 42%, rgba(31, 107, 84, 0.28) 100%),
+        url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1800&q=80') center/cover;
+    }
+    .hero-commerce-grid {
+      grid-template-columns: minmax(0, 680px) 1fr;
+      min-height: 430px;
+    }
+    .hero-copy {
+      position: relative;
+      z-index: 2;
+      padding: 22px 0;
+    }
+    .hero .eyebrow { color: #b8e6d0; }
+    .hero h1 {
+      color: #ffffff;
+      font-size: clamp(2.35rem, 4vw, 3.9rem);
+      line-height: 1.02;
+      max-width: 680px;
+    }
+    .hero p {
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 1rem;
+      max-width: 590px;
+    }
+    .hero-search {
+      max-width: 560px;
+      margin: 22px 0 18px;
+      box-shadow: 0 18px 46px rgba(0,0,0,.28);
+    }
+    .hero-actions .btn.secondary {
+      background: rgba(255,255,255,.14);
+      color: #fff;
+      border-color: rgba(255,255,255,.38);
+    }
+    .hero-photo-card { display: none; }
+    .section { padding: 54px 0; }
+    .section h2 { font-size: clamp(1.75rem, 2.45vw, 2.45rem); }
+    .product-card h3 { font-size: 1rem; }
+    .product-card p { font-size: .88rem; }
+    @media(max-width:900px){
+      .hero-commerce-grid { grid-template-columns: 1fr; min-height: auto; }
+      .ecommerce-hero { padding: 56px 0 44px; }
+    }
+  </style>
+
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span><strong>We ship everything but the water.</strong></span>
+      <span>Need help choosing? Call <strong>1-800-POND</strong></span>
+      <a href="#help">Expert support</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-main">
+      <a class="brand" href="index.html" aria-label="Pondliner.com home">
+        <span class="brand-logo">Pondliner<span>.com</span></span>
+        <small>Water garden headquarters</small>
+      </a>
+      <form class="site-search" role="search" onsubmit="event.preventDefault();">
+        <label class="sr-only" for="search">Search products</label>
+        <input id="search" type="search" placeholder="Search liners, pumps, UV clarifiers, koi food..." />
+        <button type="submit">Search</button>
+      </form>
+      <div class="header-actions">
+        <a href="#learn">Guides</a>
+        <a href="#help">Help</a>
+        <a class="cart" href="#cart">Cart <span>0</span></a>
+        <button class="nav-toggle" id="navToggle" aria-controls="siteNav" aria-expanded="false">Menu</button>
+      </div>
+    </div>
+
+    <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+      <div class="container nav-row" id="navRow">
+        <button class="nav-parent" id="shopToggle" aria-expanded="false">Shop all</button>
+        <a href="#liners">Pond liners</a>
+        <a href="#pumps">Pumps & filtration</a>
+        <a href="#water-care">Water care</a>
+        <a href="#fish">Koi & fish</a>
+        <a href="#popular">Best sellers</a>
+        <a href="#learn">Learning center</a>
+        <a href="product.html">Sample product</a>
+      </div>
+      <div class="mega-menu" id="shopMenu">
+        <div class="container mega-grid">
+          <div><p>Build</p><a href="#kits">Pond kits</a><a href="#liners">EPDM liners</a><a href="#liners">Underlayment</a><a href="#liners">Repair kits</a></div>
+          <div><p>Move & clean water</p><a href="#pumps">Pumps</a><a href="#pumps">Filters</a><a href="#pumps">Skimmers</a><a href="#pumps">UV clarifiers</a></div>
+          <div><p>Maintain</p><a href="#water-care">Algae control</a><a href="#water-care">Beneficial bacteria</a><a href="#fish">Koi food</a><a href="#seasonal">Seasonal care</a></div>
+          <div class="mega-callout"><strong>New to ponds?</strong><span>Use simple guides before buying.</span><a href="#start">Start here →</a></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero ecommerce-hero">
+      <div class="container hero-commerce-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Specialty pond supplies</p>
+          <h1>Everything for a clear, healthy pond.</h1>
+          <p>Shop pond liners, pumps, filtration, water treatments, koi care, and project kits — with practical guidance when you need it.</p>
+          <form class="hero-search" onsubmit="event.preventDefault();">
+            <input type="search" placeholder="Search liners, pumps, koi food, filters..." aria-label="Search products">
+            <button type="submit">Search</button>
+          </form>
+          <div class="hero-actions"><a class="btn primary" href="#popular">Shop best sellers</a><a class="btn secondary" href="#start">Help me choose</a></div>
+        </div>
+        <div class="hero-photo-card" aria-label="Decorative pond image">
+          <div class="pond-photo-main"></div>
+          <div class="floating-deal"><strong>Spring startup</strong><span>Bacteria, water care, koi food</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-shop" aria-label="Quick shopping categories">
+      <div class="container quick-grid">
+        <a href="#liners"><span>▰</span><strong>Pond liners</strong><em>EPDM, PVC, underlayment</em></a>
+        <a href="#kits"><span>◈</span><strong>Pond kits</strong><em>Complete project bundles</em></a>
+        <a href="#pumps"><span>⚙</span><strong>Pumps & filters</strong><em>Flow, filtration, skimmers</em></a>
+        <a href="#water-care"><span>◌</span><strong>Water care</strong><em>Algae, clarity, bacteria</em></a>
+        <a href="#fish"><span>◆</span><strong>Koi & fish</strong><em>Food and health supplies</em></a>
+      </div>
+    </section>
+
+    <section class="section product-first" id="popular">
+      <div class="container">
+        <div class="section-head split"><div><p class="eyebrow">Best sellers</p><h2>Popular pond essentials</h2></div><a class="text-link" href="#categories">View all categories →</a></div>
+        <div class="carousel-wrap">
+          <button class="carousel-btn prev" data-carousel="bestSellers" aria-label="Previous products">‹</button>
+          <div class="product-carousel" id="bestSellers">
+            <article class="product-card"><div class="badge">Best seller</div><div class="product-photo photo-roll"></div><h3>45 Mil EPDM Pond Liner</h3><p>Fish-safe rubber liner for new builds and repairs.</p><div class="rating">★★★★★ <span>127</span></div><strong>From $89.00</strong><a class="btn mini" href="product.html">View product</a></article>
+            <article class="product-card"><div class="badge">Essential</div><div class="product-photo photo-under"></div><h3>Pond Underlayment</h3><p>Protects liners from rocks, roots, and punctures.</p><div class="rating">★★★★★ <span>84</span></div><strong>From $29.00</strong><a class="btn mini" href="#">Shop now</a></article>
+            <article class="product-card"><div class="badge">Spring pick</div><div class="product-photo photo-bottle"></div><h3>Beneficial Bacteria Starter</h3><p>Restart biological balance after winter.</p><div class="rating">★★★★☆ <span>62</span></div><strong>From $34.00</strong><a class="btn mini" href="#">Shop now</a></article>
+            <article class="product-card"><div class="badge">Fish care</div><div class="product-photo photo-food"></div><h3>Wheat Germ Koi Food</h3><p>Cool-season feeding for koi and pond fish.</p><div class="rating">★★★★★ <span>48</span></div><strong>From $42.00</strong><a class="btn mini" href="#">Shop now</a></article>
+            <article class="product-card"><div class="badge">Equipment</div><div class="product-photo photo-pump"></div><h3>Professional Pond Pump</h3><p>Reliable flow for waterfalls, filtration, and circulation.</p><div class="rating">★★★★☆ <span>39</span></div><strong>From $189.00</strong><a class="btn mini" href="#">Shop now</a></article>
+            <article class="product-card"><div class="badge">Clarity</div><div class="product-photo photo-uv"></div><h3>UV Clarifier</h3><p>Helps control green water in outdoor ponds.</p><div class="rating">★★★★☆ <span>31</span></div><strong>From $129.00</strong><a class="btn mini" href="#">Shop now</a></article>
+          </div>
+          <button class="carousel-btn next" data-carousel="bestSellers" aria-label="Next products">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section start-panel" id="start">
+      <div class="container start-grid">
+        <div><p class="eyebrow">Not sure what to buy?</p><h2>Start with your pond project.</h2><p>For beginners, product categories are not enough. Guided commerce helps customers choose the right size, flow, and seasonal care products.</p></div>
+        <div class="finder-options">
+          <a href="#kits"><span>01</span><strong>Build a new pond</strong><em>Kits, liners, pumps, filters</em></a>
+          <a href="#liners"><span>02</span><strong>Replace a liner</strong><em>Sizes, materials, underlayment</em></a>
+          <a href="#water-care"><span>03</span><strong>Fix green water</strong><em>Algae control and bacteria</em></a>
+          <a href="#seasonal"><span>04</span><strong>Seasonal maintenance</strong><em>Spring, summer, winter prep</em></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-head split"><div><p class="eyebrow">Shop by department</p><h2>Designed like a real store.</h2></div><p>Each department can later become a page with filters, best sellers, education, and support prompts.</p></div>
+        <div class="department-grid">
+          <article id="liners"><div class="dept-photo dept-liners"></div><h3>Pond Liners</h3><p>EPDM, PVC, underlayment, seam tape, patch kits.</p><a href="product.html">Shop liners →</a></article>
+          <article id="kits"><div class="dept-photo dept-kits"></div><h3>Pond Kits</h3><p>Complete bundles for new backyard pond projects.</p><a href="#">Shop kits →</a></article>
+          <article id="pumps"><div class="dept-photo dept-pumps"></div><h3>Pumps & Filtration</h3><p>Pumps, filters, skimmers, UV clarifiers, plumbing.</p><a href="#">Shop equipment →</a></article>
+          <article id="water-care"><div class="dept-photo dept-water"></div><h3>Water Treatments</h3><p>Algae control, beneficial bacteria, conditioners.</p><a href="#">Shop water care →</a></article>
+          <article id="fish"><div class="dept-photo dept-fish"></div><h3>Koi & Fish Care</h3><p>Food, health supplies, seasonal feeding support.</p><a href="#">Shop fish care →</a></article>
+          <article><div class="dept-photo dept-fountain"></div><h3>Fountains & Aeration</h3><p>Aeration, fountains, waterfalls, and visual movement.</p><a href="#">Shop fountains →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section seasonal-band" id="seasonal">
+      <div class="container seasonal-grid">
+        <div><p class="eyebrow">Seasonal merchandising</p><h2>Spring pond startup</h2><p>Put timely products close to the buying path: bacteria starter, water conditioner, koi food, and pump checks.</p></div>
+        <div class="seasonal-products"><a href="#"><strong>Beneficial bacteria</strong><span>Restart balance</span></a><a href="#"><strong>Water conditioner</strong><span>Protect fish</span></a><a href="#"><strong>Cool-season food</strong><span>Feed safely</span></a></div>
+      </div>
+    </section>
+
+    <section class="section brands">
+      <div class="container">
+        <div class="section-head split"><div><p class="eyebrow">Specialty brands</p><h2>Known products. Expert support.</h2></div><p>Brand rows help the store feel established and specialized without overwhelming new shoppers.</p></div>
+        <div class="brand-strip"><span>Aquascape</span><span>Atlantic</span><span>OASE</span><span>Laguna</span><span>Firestone / Elevate</span><span>Blackwater Creek</span></div>
+      </div>
+    </section>
+
+    <section class="section learn" id="learn">
+      <div class="container learn-grid">
+        <div><p class="eyebrow">Learning center</p><h2>Guides that support the sale.</h2><p>Calculators and explainers reduce decision anxiety and help shoppers buy the right product the first time.</p></div>
+        <div class="guide-grid"><a href="#">Liner size calculator</a><a href="#">Pump flow guide</a><a href="#">Filtration basics</a><a href="#">Algae troubleshooting</a><a href="#">Koi feeding by season</a><a href="#">Spring startup checklist</a></div>
+      </div>
+    </section>
+
+    <section class="help-section" id="help">
+      <div class="container help-inner"><div><p class="eyebrow">Expert help</p><h2>Questions before you buy?</h2><p>Make support visible. In a specialty store, guidance is a sales feature, not a hidden footer link.</p></div><div class="help-actions"><a class="btn primary" href="mailto:help@example.com">Email support</a><a class="btn outline" href="tel:18007663">Call 1-800-POND</a></div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-grid"><div><strong>Pondliner.com</strong><p>Modern ecommerce redesign concept focused on clarity, guided discovery, and specialty commerce.</p></div><div><strong>Shop</strong><a href="#liners">Pond liners</a><a href="#pumps">Pumps & filtration</a><a href="#water-care">Water care</a></div><div><strong>Learn</strong><a href="#learn">Guides</a><a href="#start">Start here</a><a href="product.html">Sample product</a></div></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
